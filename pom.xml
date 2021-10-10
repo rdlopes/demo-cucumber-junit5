@@ -21,7 +21,7 @@
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <version.spring-boot>2.5.4</version.spring-boot>
+        <version.spring-boot>2.5.5</version.spring-boot>
         <version.springdoc-openapi-ui>1.5.11</version.springdoc-openapi-ui>
         <version.cucumber>6.10.4</version.cucumber>
     </properties>
