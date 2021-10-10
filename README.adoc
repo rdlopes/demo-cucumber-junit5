@@ -1,0 +1,18 @@
+= demo-bdd
+
+Un template Spring Boot pour lancer un BDD/ATDD avec Cucumber 6 et JUnit 5.
+
+Maven et le JDK 17 seront nécessaires.
+
+== Exécuter les tests
+
+Le projet utilise Maven pour son cycle de vie.
+Par conséquent, les tests unitaires et fonctionnels se lancent au terminal, à la racine du projet :  `mvn verify`.
+
+== Exécuter le projet
+
+L'exécution du projet se fera elle aussi via Maven, au terminal, à la racine : `mvn spring-boot:run`
+
+== Auteur
+
+Vous pouvez m'addresser vos remarques link:mailto:rui.d.lopes@me.com[par mail].
