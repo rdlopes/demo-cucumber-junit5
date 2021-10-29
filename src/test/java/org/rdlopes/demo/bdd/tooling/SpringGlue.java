@@ -9,7 +9,5 @@ import org.springframework.test.web.servlet.MockMvc;
 @CucumberContextConfiguration
 @SpringBootTest
 @AutoConfigureMockMvc
-public abstract class SpringEnabledSteps {
-    @Autowired
-    protected MockMvc mvc;
+public class SpringGlue {
 }

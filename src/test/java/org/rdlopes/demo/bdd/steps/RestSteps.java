@@ -2,18 +2,20 @@ package org.rdlopes.demo.bdd.steps;
 
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.rdlopes.demo.bdd.tooling.SpringEnabledSteps;
-import org.springframework.http.MediaType;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.ResultActions;
 
-import static org.springframework.http.MediaType.*;
-import static org.springframework.http.MediaType.TEXT_PLAIN;
+import static org.springframework.http.MediaType.valueOf;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-public class RestSteps extends SpringEnabledSteps {
+public class RestSteps {
+
+    @Autowired
+    protected MockMvc mvc;
 
     private ResultActions performedActions;
 

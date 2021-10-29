@@ -1,9 +1,8 @@
 package org.rdlopes.demo.bdd.steps;
 
 import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
-import org.rdlopes.demo.bdd.tooling.SpringEnabledSteps;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.web.servlet.MockMvc;
 
 import static org.hamcrest.Matchers.is;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
@@ -11,7 +10,10 @@ import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-public class ActuatorSteps extends SpringEnabledSteps {
+public class ActuatorSteps {
+
+    @Autowired
+    protected MockMvc mvc;
 
     @Given("application is up")
     public void applicationIsUp() throws Exception {

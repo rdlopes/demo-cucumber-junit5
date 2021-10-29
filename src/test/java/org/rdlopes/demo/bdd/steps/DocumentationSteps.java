@@ -2,7 +2,8 @@ package org.rdlopes.demo.bdd.steps;
 
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.rdlopes.demo.bdd.tooling.SpringEnabledSteps;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.ResultActions;
 
 import static org.hamcrest.CoreMatchers.is;
@@ -11,7 +12,10 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
-public class DocumentationSteps extends SpringEnabledSteps {
+public class DocumentationSteps {
+
+    @Autowired
+    protected MockMvc mvc;
 
     private ResultActions performedActions;
 
