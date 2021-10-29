@@ -13,7 +13,7 @@
     <groupId>org.rdlopes</groupId>
     <artifactId>demo-bdd</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>Demo :: BDD avec Cucumber 6 et JUnit 5</name>
+    <name>Demo :: BDD avec Cucumber 7 et JUnit 5</name>
 
     <properties>
         <java.version>17</java.version>

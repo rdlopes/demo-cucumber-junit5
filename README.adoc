@@ -1,6 +1,6 @@
 = demo-bdd
 
-Un template Spring Boot pour lancer un BDD/ATDD avec Cucumber 6 et JUnit 5.
+Un template Spring Boot pour lancer un BDD/ATDD avec Cucumber 7 et JUnit 5.
 
 Maven et le JDK 17 seront nécessaires.
 
