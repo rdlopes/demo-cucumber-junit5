@@ -23,7 +23,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <version.spring-boot>2.5.5</version.spring-boot>
         <version.springdoc-openapi-ui>1.7.0</version.springdoc-openapi-ui>
-        <version.junit>5.9.2</version.junit>
+        <version.junit>5.10.0</version.junit>
         <version.cucumber>7.14.0</version.cucumber>
     </properties>
 
