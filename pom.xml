@@ -24,7 +24,7 @@
         <version.spring-boot>2.5.5</version.spring-boot>
         <version.springdoc-openapi-ui>1.8.0</version.springdoc-openapi-ui>
         <version.junit>5.11.3</version.junit>
-        <version.cucumber>7.20.1</version.cucumber>
+        <version.cucumber>7.21.1</version.cucumber>
     </properties>
 
     <dependencyManagement>
